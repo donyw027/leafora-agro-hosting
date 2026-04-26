@@ -104,14 +104,14 @@
 						<ul class="top-contact d-flex justify-content-md-end justify-content-center mb-0">
 							<li>
 								<i class="fa fa-phone"></i>
-								<a href="https://wa.me/6281990420823" target="_blank" >+62 819-9042-0823</a>
+								<a href="https://wa.me/6281990420823" target="_blank">+62 819-9042-0823</a>
 							</li>
 							<li>
 								<i class="fa fa-envelope"></i>
 								<a href="mailto:agrowpacific@gmail.com">agrowpacific@gmail.com</a> <br>
 								<i class="fa fa-envelope"></i>
-								<a href="mailto:marketing@leaforaagro.com">marketing@leaforaagro.com</a> 
-							
+								<a href="mailto:marketing@leaforaagro.com">marketing@leaforaagro.com</a>
+
 							</li>
 						</ul>
 					</div>
@@ -131,7 +131,7 @@
 								<a href="<?= site_url('home') ?>" class="leafora-brand">
 									<img src="<?= base_url('assets/img/logoagro.jpg') ?>" alt="Leafora Agro Industri">
 									<div class="leafora-brand-text">
-										<h4>Leafora Agro Industri</h4>
+										<h4>XLeafora Agro Industri</h4>
 									</div>
 								</a>
 							</div>
