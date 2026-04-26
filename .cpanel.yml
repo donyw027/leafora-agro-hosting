@@ -9,4 +9,3 @@ deployment:
     - /bin/cp -R application/libraries $DEPLOYPATH/application/
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH

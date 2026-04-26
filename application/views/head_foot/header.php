@@ -131,7 +131,7 @@
 								<a href="<?= site_url('home') ?>" class="leafora-brand">
 									<img src="<?= base_url('assets/img/logoagro.jpg') ?>" alt="Leafora Agro Industri">
 									<div class="leafora-brand-text">
-										<h4>Leafora Agro Industri</h4>
+										<h4>TESSSSSSLeafora Agro Industri</h4>
 									</div>
 								</a>
 							</div>
