@@ -1,0 +1,898 @@
+/* Frontend compatibility + mobile fixes */
+body.frontend-site {
+    overflow-x: hidden;
+}
+
+body.frontend-site *,
+body.frontend-site *::before,
+body.frontend-site *::after {
+    box-sizing: border-box;
+}
+
+body.frontend-site img {
+    max-width: 100%;
+    height: auto;
+}
+
+body.frontend-site .container,
+body.frontend-site .container-fluid {
+    width: 100%;
+}
+
+/* Bootstrap utility compatibility */
+body.frontend-site .g-4 { margin: -0.75rem; }
+body.frontend-site .g-4 > [class*="col-"] { padding: 0.75rem; }
+body.frontend-site .g-3 { margin: -0.5rem; }
+body.frontend-site .g-3 > [class*="col-"] { padding: 0.5rem; }
+body.frontend-site .g-2 { margin: -0.375rem; }
+body.frontend-site .g-2 > [class*="col-"] { padding: 0.375rem; }
+body.frontend-site .gy-4 > [class*="col-"] { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+body.frontend-site .gap-2 { gap: 0.5rem; }
+body.frontend-site .rounded-4 { border-radius: 1rem !important; }
+body.frontend-site .fw-bold { font-weight: 700 !important; }
+body.frontend-site .fw-semibold { font-weight: 600 !important; }
+body.frontend-site .text-white-50 { color: rgba(255,255,255,.75) !important; }
+body.frontend-site .overflow-hidden { overflow: hidden !important; }
+body.frontend-site .shadow-lg { box-shadow: 0 1rem 3rem rgba(0,0,0,.18) !important; }
+body.frontend-site .min-vh-100 { min-height: 100vh !important; }
+
+body.frontend-site .section-title {
+    line-height: 1.3;
+}
+
+/* Header */
+body.frontend-site .header .header-inner {
+    padding: 0;
+}
+
+body.frontend-site .leafora-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+body.frontend-site .leafora-brand-text h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+body.frontend-site .main-menu .navigation {
+    flex: 1 1 auto;
+}
+
+body.frontend-site .main-menu .nav.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+body.frontend-site .main-menu .nav.menu li {
+    float: none;
+}
+
+body.frontend-site .leafora-header-cta {
+    margin-left: 16px;
+    flex: 0 0 auto;
+}
+
+/* Hero */
+body.frontend-site .leafora-hero .single-slider {
+    min-height: 620px;
+    height: auto;
+}
+
+body.frontend-site .hero-modern-card,
+body.frontend-site .section-intro-card,
+body.frontend-site .cta-modern-box,
+body.frontend-site .contact-box,
+body.frontend-site .service-card,
+body.frontend-site .leafora-card,
+body.frontend-site .network-card,
+body.frontend-site .mini-feature-box {
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+body.frontend-site .hero-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.2;
+}
+
+body.frontend-site .hero-desc,
+body.frontend-site .service-list,
+body.frontend-site p,
+body.frontend-site li {
+    line-height: 1.75;
+}
+
+/* Forms */
+body.frontend-site .form-control,
+body.frontend-site textarea,
+body.frontend-site input,
+body.frontend-site select {
+    max-width: 100%;
+}
+
+body.frontend-site .pagination {
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+body.frontend-site .map-container {
+    min-height: 420px;
+}
+
+body.frontend-site .wa-float-btn {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 999;
+}
+
+/* Footer */
+body.frontend-site .footer .single-footer {
+    height: 100%;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    body.frontend-site .topbar {
+        display: none;
+    }
+
+    body.frontend-site .header .logo {
+        float: none;
+        margin-top: 0;
+    }
+
+    body.frontend-site .header .inner {
+        padding: 14px 0;
+    }
+
+    body.frontend-site .main-menu {
+        justify-content: flex-end;
+    }
+
+    body.frontend-site .leafora-header-cta {
+        display: none !important;
+    }
+
+    body.frontend-site .leafora-hero .single-slider {
+        min-height: 560px;
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    body.frontend-site .hero-modern-card {
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    body.frontend-site .header .header-inner {
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    body.frontend-site .leafora-brand-wrap,
+    body.frontend-site .leafora-brand {
+        min-height: 64px;
+    }
+
+    body.frontend-site .leafora-brand-text h4 {
+        font-size: .95rem;
+    }
+
+    body.frontend-site .mobile-nav {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: auto;
+        z-index: 9999;
+    }
+
+    body.frontend-site .slicknav_menu {
+        background: transparent !important;
+        padding: 0 !important;
+    }
+
+    body.frontend-site .slicknav_btn {
+        margin: 0 !important;
+        float: none;
+    }
+
+    body.frontend-site .slicknav_nav {
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        min-width: 240px;
+        background: #fff;
+        border-radius: 16px;
+        padding: 10px 14px;
+        box-shadow: 0 16px 36px rgba(0,0,0,.16);
+    }
+
+    body.frontend-site .slicknav_nav a,
+    body.frontend-site .slicknav_nav .slicknav_row {
+        display: block;
+        padding: 10px 6px !important;
+        color: #24313d !important;
+        border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+
+    body.frontend-site .slicknav_nav li:last-child a {
+        border-bottom: 0;
+    }
+
+    body.frontend-site .leafora-hero .single-slider {
+        min-height: auto;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        background-position: center center !important;
+    }
+
+    body.frontend-site .leafora-hero .single-slider::before {
+        background: linear-gradient(180deg, rgba(20,35,42,.82) 0%, rgba(20,35,42,.62) 100%);
+    }
+
+    body.frontend-site .hero-title {
+        font-size: 1.75rem;
+    }
+
+    body.frontend-site .hero-desc {
+        font-size: .95rem;
+    }
+
+    body.frontend-site .hero-points {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    body.frontend-site .hero-point-item {
+        margin: 0 !important;
+        font-size: .8rem;
+    }
+
+    body.frontend-site .button.d-flex,
+    body.frontend-site .d-flex.flex-wrap.gap-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    body.frontend-site .button.d-flex .btn,
+    body.frontend-site .d-flex.flex-wrap.gap-2 .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    body.frontend-site .features-section,
+    body.frontend-site .leafora-highlight-section,
+    body.frontend-site .leafora-network-section,
+    body.frontend-site .leafora-cta-section,
+    body.frontend-site .contact-section,
+    body.frontend-site .footer .footer-top {
+        padding-top: 56px !important;
+        padding-bottom: 56px !important;
+    }
+
+    body.frontend-site .breadcrumbs {
+        padding: 46px 0;
+    }
+
+    body.frontend-site .breadcrumbs h2 {
+        font-size: 1.8rem;
+    }
+
+    body.frontend-site .section-intro-card,
+    body.frontend-site .cta-modern-box,
+    body.frontend-site .contact-box,
+    body.frontend-site .service-card,
+    body.frontend-site .leafora-card {
+        padding: 22px !important;
+    }
+
+    body.frontend-site .map-container {
+        min-height: 280px;
+        margin-bottom: 1rem;
+    }
+
+    body.frontend-site .footer .single-footer {
+        margin: 0 0 24px 0;
+    }
+}
+
+
+/* WhatsApp floating button */
+.wa-float-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+}
+
+/* Scroll to top button naikkan */
+#scrollUp {
+    bottom: 95px !important;
+    right: 20px !important;
+    z-index: 9998 !important;
+}
+
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 991.98px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .header,
+    .header-area,
+    .header-inner,
+    .main-header,
+    .site-header {
+        position: relative !important;
+        z-index: 999;
+    }
+
+    /* wrapper header */
+    .header .inner,
+    .header .header-inner,
+    .header .container,
+    .header-area .container {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    /* logo */
+    .logo,
+    .header .logo {
+        max-width: 180px;
+    }
+
+    .header .logo img,
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* slicknav button */
+    .slicknav_menu {
+        background: #fff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .slicknav_btn {
+        position: absolute !important;
+        right: 15px !important;
+        top: 18px !important;
+        margin: 0 !important;
+        float: none !important;
+        background: transparent !important;
+        z-index: 1001 !important;
+    }
+
+    .slicknav_icon-bar {
+        background-color: #1f4e79 !important;
+        box-shadow: none !important;
+    }
+
+    /* nav list */
+    .slicknav_nav {
+        margin-top: 55px !important;
+        padding: 10px 15px !important;
+        background: #fff !important;
+        max-height: 70vh;
+        overflow-y: auto;
+        border-top: 1px solid #eee;
+    }
+
+    .slicknav_nav li {
+        display: block;
+    }
+
+    .slicknav_nav a {
+        padding: 10px 0 !important;
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+        color: #1f2d3d !important;
+    }
+
+    /* hide desktop menu on mobile */
+    .main-menu,
+    .desktop-nav,
+    .navbar-nav {
+        display: none !important;
+    }
+
+    /* show mobile nav only */
+    .mobile-nav {
+        display: block !important;
+    }
+
+    /* breadcrumb / hero under header */
+    .breadcrumbs,
+    .page-title,
+    .hero-inner,
+    .slider-area {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* page section spacing */
+    .section,
+    section {
+        overflow-x: hidden;
+    }
+
+    /* whatsapp */
+    .wa-float-btn {
+        right: 16px !important;
+        bottom: 16px !important;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* scroll up button jangan nutup WA */
+    #scrollUp {
+        right: 16px !important;
+        bottom: 78px !important;
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    .topbar {
+        display: none !important;
+    }
+
+    .mobile-nav {
+        display: block !important;
+        text-align: right;
+        margin-top: 12px;
+    }
+
+    .slicknav_btn {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        margin: 0 !important;
+        background: transparent !important;
+    }
+
+    .leafora-brand-text h4 {
+        font-size: 18px !important;
+    }
+
+    .header-inner {
+        padding: 10px 0 !important;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .topbar {
+        display: none !important;
+    }
+
+    .header-inner {
+        padding: 10px 0 !important;
+    }
+
+    .header-inner .inner,
+    .header-inner .row {
+        align-items: center !important;
+    }
+
+    .leafora-brand {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+
+    .leafora-brand img {
+        max-width: 42px !important;
+        height: auto !important;
+    }
+
+    .leafora-brand-text h4 {
+        font-size: 14px !important;
+        line-height: 1.1 !important;
+        margin: 0 !important;
+    }
+
+    .mobile-nav {
+        display: block !important;
+        text-align: right;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .main-menu {
+        display: none !important;
+    }
+
+    .slicknav_menu {
+        display: block !important;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .slicknav_btn {
+        float: none !important;
+        display: inline-block !important;
+        margin: 0 !important;
+        background: transparent !important;
+        padding: 6px 0 !important;
+    }
+
+    .slicknav_nav {
+        position: absolute !important;
+        top: 100% !important;
+        right: 0 !important;
+        left: auto !important;
+        width: 220px !important;
+        max-height: 70vh;
+        overflow-y: auto;
+        background: #fff !important;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.12);
+        padding: 10px 16px !important;
+        margin-top: 8px !important;
+        text-align: left !important;
+    }
+
+    .slicknav_nav a {
+        padding: 10px 0 !important;
+        font-size: 15px !important;
+        line-height: 1.35 !important;
+    }
+
+    .breadcrumbs {
+        margin-top: 0 !important;
+    }
+}
+
+/* =========================
+   MOBILE HEADER / MENU FIX
+   ========================= */
+@media (max-width: 991.98px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+
+    /* topbar disembunyikan di mobile */
+    .topbar {
+        display: none !important;
+    }
+
+    /* header jangan terlalu tinggi */
+    .header,
+    .header-inner,
+    .header .inner {
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    .header-inner {
+        padding: 10px 0 !important;
+    }
+
+    .header .inner .row {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* logo area */
+    .leafora-brand {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        text-decoration: none !important;
+    }
+
+    .leafora-brand img {
+        width: 38px !important;
+        max-width: 38px !important;
+        height: auto !important;
+    }
+
+    .leafora-brand-text h4 {
+        font-size: 14px !important;
+        line-height: 1.1 !important;
+        margin: 0 !important;
+    }
+
+    /* desktop menu wajib hilang */
+    .main-menu,
+    .navigation,
+    .leafora-header-cta {
+        display: none !important;
+    }
+
+    /* mobile nav wrapper */
+    .mobile-nav {
+        display: block !important;
+        position: relative !important;
+        text-align: right !important;
+        z-index: 1002 !important;
+        min-height: auto !important;
+    }
+
+    /* area putih besar biasanya dari sini */
+    .slicknav_menu {
+        display: block !important;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        min-height: auto !important;
+    }
+
+    .slicknav_btn {
+        display: inline-block !important;
+        float: none !important;
+        margin: 0 !important;
+        padding: 6px 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .slicknav_icon-bar {
+        background: #174c70 !important;
+        box-shadow: none !important;
+    }
+
+    /* menu dropdown mobile jangan jadi blok tinggi */
+    .slicknav_nav {
+        display: none;
+        position: absolute !important;
+        top: calc(100% + 8px) !important;
+        right: 0 !important;
+        left: auto !important;
+        width: 220px !important;
+        max-height: 70vh !important;
+        overflow-y: auto !important;
+        background: #ffffff !important;
+        border-radius: 12px !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+        padding: 10px 16px !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    .slicknav_open .slicknav_nav {
+        display: block !important;
+    }
+
+    .slicknav_nav li {
+        display: block !important;
+    }
+
+    .slicknav_nav a {
+        display: block !important;
+        padding: 10px 0 !important;
+        font-size: 15px !important;
+        line-height: 1.35 !important;
+        color: #223142 !important;
+    }
+
+    /* cegah section ketarik turun karena nav */
+    .breadcrumbs,
+    .slider,
+    .slider-area,
+    .hero-slider,
+    .page-title {
+        margin-top: 0 !important;
+    }
+
+    /* WA dan scroll up */
+    .wa-float-btn {
+        right: 16px !important;
+        bottom: 16px !important;
+    }
+
+    #scrollUp {
+        right: 16px !important;
+        bottom: 78px !important;
+    }
+}
+
+/* =========================
+   BLOG LIST PAGE
+========================= */
+.blog-list-section {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.blog-heading-card {
+	background: linear-gradient(135deg, #ffffff, #f7fbff);
+	border: 1px solid rgba(23, 76, 112, 0.08);
+	border-radius: 18px;
+	padding: 28px 28px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.blog-subtitle {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #27ae60;
+	margin-bottom: 10px;
+}
+
+.blog-title {
+	font-size: 32px;
+	font-weight: 800;
+	color: #174c70;
+	line-height: 1.2;
+}
+
+.blog-desc {
+	font-size: 15px;
+	color: #6c7a89;
+	max-width: 720px;
+}
+
+.blog-list-card {
+	background: #fff;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+	border: 1px solid rgba(23, 76, 112, 0.08);
+}
+
+.blog-article-list .blog-item {
+	border: 0 !important;
+	padding: 20px 24px;
+	transition: all 0.25s ease;
+	text-decoration: none;
+	background: #fff;
+}
+
+.blog-article-list .blog-item + .blog-item {
+	border-top: 1px solid #eef2f6 !important;
+}
+
+.blog-article-list .blog-item:hover {
+	background: #f8fcff;
+	transform: translateY(-1px);
+}
+
+.blog-item-icon {
+	width: 58px;
+	height: 58px;
+	border-radius: 14px;
+	background: linear-gradient(135deg, #174c70, #2d7db5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 8px 20px rgba(23, 76, 112, 0.18);
+}
+
+.blog-item-icon i {
+	font-size: 22px;
+	color: #fff;
+}
+
+.blog-item-title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #1f2d3d;
+	line-height: 1.45;
+	margin: 0;
+	word-break: break-word;
+}
+
+.blog-item-date,
+.blog-item-meta {
+	font-size: 14px;
+	font-weight: 500;
+	color: #7b8794;
+}
+
+.empty-blog-state {
+	padding: 60px 20px;
+}
+
+.empty-blog-icon {
+	width: 72px;
+	height: 72px;
+	margin: 0 auto;
+	border-radius: 18px;
+	background: linear-gradient(135deg, #174c70, #2d7db5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 8px 20px rgba(23, 76, 112, 0.18);
+}
+
+.empty-blog-icon i {
+	font-size: 28px;
+	color: #fff;
+}
+
+@media (max-width: 991.98px) {
+	.blog-title {
+		font-size: 28px;
+	}
+
+	.blog-article-list .blog-item {
+		padding: 18px 18px;
+	}
+
+	.blog-item-icon {
+		width: 50px;
+		height: 50px;
+		border-radius: 12px;
+	}
+
+	.blog-item-icon i {
+		font-size: 18px;
+	}
+
+	.blog-item-title {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.blog-list-section {
+		padding-top: 25px;
+		padding-bottom: 40px;
+	}
+
+	.blog-heading-card {
+		padding: 20px 18px;
+		border-radius: 14px;
+	}
+
+	.blog-title {
+		font-size: 24px;
+	}
+
+	.blog-desc {
+		font-size: 14px;
+	}
+
+	.blog-article-list .blog-item {
+		padding: 16px 14px;
+	}
+
+	.blog-item-icon {
+		width: 42px;
+		height: 42px;
+		border-radius: 10px;
+	}
+
+	.blog-item-icon i {
+		font-size: 16px;
+	}
+
+	.blog-item-title {
+		font-size: 15px;
+		line-height: 1.35;
+	}
+
+	.blog-item-meta {
+		margin-top: 6px;
+		font-size: 13px;
+	}
+}
